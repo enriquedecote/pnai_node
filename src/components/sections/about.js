@@ -132,31 +132,41 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Vue', 'Node.js', 'WordPress'];
+  const skills = [
+    'Multiagent Systems',
+    'Machine Learning',
+    'Reinforcement Learning',
+    'Simulation',
+    'Game Theory',
+    'Optimisation',
+    'Mathematical Modelling',
+    'Distributed Systems',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">About Me</h2>
+      <h2 className="numbered-heading">Leadership</h2>
 
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Brittany, a software engineer based in Boston, MA.</p>
-
+            <p>Enrique Munoz de Cote, PhD</p>
             <p>
-              I enjoy creating things that live on the internet, whether that be websites,
-              applications, or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              AI entrepreneur/scientist/engineer | AI strategy advisor | creating the next AI
+              venture
             </p>
 
             <p>
-              Shortly after graduating from{' '}
-              <a href="https://www.ccis.northeastern.edu">Northeastern University</a>, I joined the
-              engineering team at <a href="https://www.upstatement.com">Upstatement</a> where I work
-              on a wide variety of interesting and meaningful projects on a daily basis.
+              Experienced AI expert with industry and academic track record currently helping other
+              startups, late-stage companies, and the UK government develop their AI capabilities.
+            </p>
+            <p>
+              Major drivers: (automating) decision making and scarce data (information). I'm in
+              constant pursuit of algorithmic (AI and machine learning) solutions to the world's
+              most challenging unsolved problems.
             </p>
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Specialties:</p>
           </div>
 
           <ul className="skills-list">

@@ -47,22 +47,28 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
-  const four = (
+  const one = <h1>Delivering </h1>;
+  const two = <h2 className="big-heading">AI solutions for</h2>;
+  const three = <h3 className="big-heading">tier-1 VC backed startups,</h3>;
+  const four = <h3 className="big-heading">enterprise,</h3>;
+  const five = <h3 className="big-heading">and government.</h3>;
+  const six = (
     <p>
-      I'm a software engineer based in Boston, MA specializing in building (and occasionally
-      designing) exceptional websites, applications, and everything in between.
+      Because there's no one size fits all solution in AI, weather you're looking for an AI
+      transformation or a solution to a bespoke project that requires extending the state-of-the-art
+      in machine learning and AI, we can help you reach those OKRs. We use Agile methodologies for
+      execution and world recognised experts as a recipe for success.
     </p>
   );
-  const five = (
+  //Companies that shift from AI experimentation to execution achieve lasting ROI and competitive agility.
+  //If unlocking the AI potential is one of your top OKRs, we can help getting it right. One client at a time.
+  const seven = (
     <a href={`mailto:${email}`} className="email-link">
       Get In Touch
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [one, two, three, four, five, six, seven];
 
   return (
     <StyledHeroSection>
