@@ -1,11 +1,12 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
-  "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "name": "reactsite",
+  "description": "People & AI",
+  "version": "0.0.1",
+  "homepage": "https://people-ai.com",
+  "author": "Enrique de Cote <enrique@people-ai.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/enriquedecote/pnai_node"
   },
   "keywords": [
     "gatsby"

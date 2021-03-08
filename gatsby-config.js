@@ -5,8 +5,8 @@ module.exports = {
     title: 'Enrique Munoz de Cote, PhD',
     description:
       'AI entrepreneur/scientist/engineer | AI strategy advisor | creating the next AI venture',
-    siteUrl: 'https://people-ai.com.com', // No trailing slash allowed!
-    image: '/pnai_text.gif', // Path to your image you placed in the 'static' folder
+    siteUrl: 'https://people-ai.com', // No trailing slash allowed!
+    image: 'pnai_text.gif', // Path to your image you placed in the 'static' folder
     twitterUsername: '@enriquedecote',
   },
   plugins: [
