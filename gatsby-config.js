@@ -2,9 +2,8 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Enrique Munoz de Cote, PhD',
-    description:
-      'AI entrepreneur/scientist/engineer | AI strategy advisor | creating the next AI venture',
+    title: 'People & AI',
+    description: 'Consulting services for startups, enterprise and government',
     siteUrl: 'https://people-ai.com', // No trailing slash allowed!
     image: 'pnai_text.gif', // Path to your image you placed in the 'static' folder
     twitterUsername: '@enriquedecote',
