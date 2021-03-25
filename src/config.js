@@ -14,19 +14,23 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/enriquedecote',
     },
+    {
+      name: 'Gscholar',
+      url: 'https://scholar.google.co.uk/citations?user=GCvqGG4AAAAJ&hl=en',
+    },
   ],
 
   navLinks: [
     {
-      name: 'About',
+      name: 'Leadership',
       url: '/#about',
     },
     {
-      name: 'Experience',
-      url: '/#jobs',
+      name: 'Technologies',
+      url: '/#tech',
     },
     {
-      name: 'Work',
+      name: 'Featured Projects',
       url: '/#projects',
     },
   ],

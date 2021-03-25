@@ -40,7 +40,7 @@ const StyledProject = styled.div`
         padding: 25px 25px 20px;
       }
     }
-    .project-tech-list {
+    .project-keytech-list {
       justify-content: flex-end;
 
       li {
@@ -131,7 +131,7 @@ const StyledProject = styled.div`
     }
   }
 
-  .project-tech-list {
+  .project-keytech-list {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -264,7 +264,7 @@ const Featured = () => {
                   }
                 }
               }
-              tech
+              keytech
               external
               client
             }
@@ -294,7 +294,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, client } = frontmatter;
+            const { external, title, keytech, github, cover, client } = frontmatter;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -303,10 +303,10 @@ const Featured = () => {
                   <h3 className="project-title">{title}</h3>
                   <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
 
-                  {tech.length && (
-                    <ul className="project-tech-list">
-                      {tech.map((tech, i) => (
-                        <li key={i}>{tech}</li>
+                  {keytech.length && (
+                    <ul className="project-keytech-list">
+                      {keytech.map((keytech, i) => (
+                        <li key={i}>{keytech}</li>
                       ))}
                     </ul>
                   )}

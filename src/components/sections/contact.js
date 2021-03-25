@@ -46,9 +46,13 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
+      <h2 className="numbered-heading overline">Contact</h2>
 
       <h2 className="title">Get In Touch</h2>
+
+      <p>
+        We are based in Cambridge, UK, but our clients are global.
+      </p>
 
       <p>
         Please do contact us if you'd like to discuss any machine learning, data science or AI

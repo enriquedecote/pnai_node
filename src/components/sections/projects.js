@@ -119,7 +119,7 @@ const StyledProject = styled.div`
     }
   }
 
-  .project-tech-list {
+  .project-keytech-list {
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
@@ -154,7 +154,7 @@ const Projects = () => {
           node {
             frontmatter {
               title
-              tech
+              keytech
               external
             }
             html
@@ -192,7 +192,7 @@ const Projects = () => {
         {projectsToShow &&
           projectsToShow.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { github, external, title, tech } = frontmatter;
+            const { github, external, title, keytech } = frontmatter;
 
             return (
               <CSSTransition
@@ -236,10 +236,10 @@ const Projects = () => {
                     </header>
 
                     <footer>
-                      {tech && (
-                        <ul className="project-tech-list">
-                          {tech.map((tech, i) => (
-                            <li key={i}>{tech}</li>
+                      {keytech && (
+                        <ul className="project-keytech-list">
+                          {keytech.map((keytech, i) => (
+                            <li key={i}>{keytech}</li>
                           ))}
                         </ul>
                       )}

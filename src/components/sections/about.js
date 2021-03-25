@@ -133,14 +133,22 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Multiagent Systems',
+    'Artificial Intelligence',
     'Machine Learning',
-    'Reinforcement Learning',
+    'Data Science',
+    'Big Data',
+    'Reinforcement Learning ',
+    'NLP',
     'Simulation',
     'Game Theory',
     'Optimisation',
     'Mathematical Modelling',
-    'Distributed Systems',
+  ];
+  const appointments = [
+    'CTO at People & AI',
+    'Building the next AI hit (in stelth)',
+    'Board member at TARA (the Trading Agent Research Association)',
+    'Associate Professor of Computer Science @ INAOE',
   ];
 
   return (
@@ -150,23 +158,30 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Enrique Munoz de Cote, PhD</p>
+            <p><b>Enrique Munoz de Cote, PhD</b></p>
             <p>
-              AI entrepreneur/scientist/engineer | AI strategy advisor | creating the next AI
-              venture
+              AI entrepreneur/scientist/engineer
             </p>
 
             <p>
-              Experienced AI expert with industry and academic track record currently helping other
+              Experienced AI expert with industry and academic track record,  <a target="_blank" href="https://scholar.google.co.uk/citations?user=GCvqGG4AAAAJ&hl=en">70+ peer reviewed academic papers</a>,
+              3 international awards, 2 patent submissions.
+              Currently helping other
               startups, late-stage companies, and the UK government develop their AI capabilities.
             </p>
+
+            <p><b>Current appointments:</b></p>
+            <ul className="skills-list">
+              {appointments && appointments.map((appointment, i ) => <li key={i}>{appointment}</li>)}
+            </ul>
+
             <p>
-              Major drivers: (automating) decision making and scarce data (information). I'm in
+              <b>Major drivers:</b> (automating) decision making and scarce data (information). I'm in
               constant pursuit of algorithmic (AI and machine learning) solutions to the world's
               most challenging unsolved problems.
             </p>
 
-            <p>Specialties:</p>
+            <p><b>Specialties:</b></p>
           </div>
 
           <ul className="skills-list">

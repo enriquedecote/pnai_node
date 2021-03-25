@@ -60,6 +60,11 @@ const Hero = () => {
       execution and world recognised experts as a recipe for success.
     </p>
   );
+  const sixone = (
+    <p>
+      Based in Cambridge, UK, what distinguish us is our thrive to solve deep technical data problems.
+    </p>
+  );
   //Companies that shift from AI experimentation to execution achieve lasting ROI and competitive agility.
   //If unlocking the AI potential is one of your top OKRs, we can help getting it right. One client at a time.
   const seven = (
@@ -68,7 +73,7 @@ const Hero = () => {
     </a>
   );
 
-  const items = [one, two, three, four, five, six, seven];
+  const items = [one, two, three, four, five, six, sixone, seven];
 
   return (
     <StyledHeroSection>

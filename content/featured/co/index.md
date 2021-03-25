@@ -4,7 +4,7 @@ client: 'the Cabinet Office'
 title: 'Google for government'
 cover: './docs.jpg'
 external: 'https://www.thetimes.co.uk/article/ai-trawls-20-000-miles-of-state-papers-j0l9k5gx9'
-tech:
+keytech:
   - NLP
   - Knowledge graphs
   - Classification

@@ -95,7 +95,7 @@ const StyledTableContainer = styled.div`
         white-space: nowrap;
       }
 
-      &.tech {
+      &.keytech {
         font-size: var(--fz-xxs);
         font-family: var(--font-mono);
         line-height: 1.5;
@@ -164,7 +164,7 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const { date, github, external, title, tech, company } = node.frontmatter;
+                  const { date, github, external, title, keytech, company } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
@@ -175,13 +175,13 @@ const ArchivePage = ({ location, data }) => {
                         {company ? <span>{company}</span> : <span>—</span>}
                       </td>
 
-                      <td className="tech hide-on-mobile">
-                        {tech.length > 0 &&
-                          tech.map((item, i) => (
+                      <td className="keytech hide-on-mobile">
+                        {keytech.length > 0 &&
+                          keytech.map((item, i) => (
                             <span key={i}>
                               {item}
                               {''}
-                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
+                              {i !== keytech.length - 1 && <span className="separator">&middot;</span>}
                             </span>
                           ))}
                       </td>
@@ -228,7 +228,7 @@ export const pageQuery = graphql`
           frontmatter {
             date
             title
-            tech
+            keytech
             external
             company
           }

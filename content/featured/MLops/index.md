@@ -4,7 +4,7 @@ client: '[undisclosed client]'
 title: 'Machine Learning operations'
 cover: './mlops.png'
 external: ''
-tech:
+keytech:
   - CI/CD
   - Agile
   - open-source frameworks

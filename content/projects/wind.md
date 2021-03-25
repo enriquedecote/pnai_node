@@ -3,7 +3,7 @@ date: '2015-12'
 title: 'Energy trading'
 <>github: ''
 <>external: 'https://keep-vue.netlify.com/'
-tech:
+keytech:
   - Reinforcement Learning
   - Probabilistic modelling
   - Portfolio allocation

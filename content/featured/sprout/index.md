@@ -4,7 +4,7 @@ client: '[undisclosed client]'
 title: 'Topic Modelling'
 cover: './tm.jpg'
 external: ''
-tech:
+keytech:
   - Latent Dirichlet Allocation
   - guided LDA
   - Unsupervised Learning

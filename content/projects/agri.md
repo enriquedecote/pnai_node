@@ -3,7 +3,7 @@ date: '2016-08'
 title: 'Precision agriculture'
 <>github: ''
 <>external: 'https://keep-vue.netlify.com/'
-tech:
+keytech:
   - Computer vision
   - Multispectral analysis
   - Drones

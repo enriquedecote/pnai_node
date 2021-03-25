@@ -3,7 +3,7 @@ date: '2019-12'
 title: 'Last mile logistics'
 <>github: ''
 <>external: 'https://keep-vue.netlify.com/'
-tech:
+keytech:
   - Reinforcement Learning
   - Probabilistic modelling
   - Resource allocation
