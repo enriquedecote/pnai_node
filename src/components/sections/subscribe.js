@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+/* eslint no-console:0 no-alert:0 */
+import React from 'react'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 import styled from 'styled-components';
-import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 const StyledSubscribeSection = styled.section`
   max-width: 600px;
@@ -65,16 +66,11 @@ export default class MailChimpForm extends React.Component {
           <div>ERROR</div>
         ) : (
           <StyledSubscribeSection id="subscribe">
-                  <h2 className="numbered-heading overline">Subscribe</h2>
-                  <h2 className="title">Want to get the latest in AI within your industry? </h2>
-                  <p>
-                    We are based in Cambridge, UK,
-                  </p>
-                  <p>
-                    but our clients and solutions are global.
-                  </p>
             <form onSubmit={this._handleSubmit}>
-              <input onChange = {this._handleChange} type={'email'} autoComplete="email" className={'email-field'} placeholder="Email"></input>
+              <label>
+          Number of guests:
+              <input onChange = {this._handleChange} type={'email'} autoComplete="email" className={'email-field'} placeholder="A small text input"> </input>
+              </label>
               <button
                 type="submit"
                 className={'email-link'}

@@ -160,6 +160,16 @@ const mixins = {
       }
     }
   `,
+  textfield: css`
+    background: transparent;
+    border: 1px solid var(--lightest-slate);
+    border-radius: var(--border-radius);
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    padding: .75rem 1rem;
+    margin: 0.75em;
+    color: var(--lightest-slate);
+  `,
 };
 
 export default mixins;
