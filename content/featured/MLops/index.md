@@ -1,6 +1,6 @@
 ---
 date: '2020-12'
-client: '[undisclosed client]'
+client: 'bit.bio'
 title: 'Machine Learning operations'
 cover: './mlops.png'
 external: ''

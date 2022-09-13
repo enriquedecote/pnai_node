@@ -1,6 +1,6 @@
 ---
 date: '2021-01'
-client: '[undisclosed client]'
+client: 'Sprout.ai'
 title: 'Topic Modelling'
 cover: './tm.jpg'
 external: ''

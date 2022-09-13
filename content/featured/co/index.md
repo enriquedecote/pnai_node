@@ -1,6 +1,6 @@
 ---
 date: '2020-06'
-client: 'the Cabinet Office'
+client: 'gov.UK - Cabinet Office'
 title: 'Google for government'
 cover: './docs.jpg'
 external: 'https://www.thetimes.co.uk/article/ai-trawls-20-000-miles-of-state-papers-j0l9k5gx9'
