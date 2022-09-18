@@ -33,6 +33,10 @@ module.exports = {
       name: 'Featured Projects',
       url: '/#projects',
     },
+    {
+      name: 'Insights',
+      url: '/insights',
+    },
   ],
 
   colors: {
