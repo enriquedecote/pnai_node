@@ -13,7 +13,14 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [
+          '*/drafts/*'
+        ]
+      }
+    }
     `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
