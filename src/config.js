@@ -1,5 +1,6 @@
 module.exports = {
   email: 'hello@people-ai.com',
+  calendarBook: 'https://app.reclaim.ai/m/enrique-de-cote/flexible-meeting',
 
   socialMedia: [
     {
@@ -22,10 +23,6 @@ module.exports = {
 
   navLinks: [
     {
-      name: 'Leadership',
-      url: '/#about',
-    },
-    {
       name: 'Technologies',
       url: '/#tech',
     },
@@ -36,6 +33,10 @@ module.exports = {
     {
       name: 'Insights',
       url: '/insights',
+    },
+    {
+      name: 'Leadership',
+      url: '/#about',
     },
   ],
 

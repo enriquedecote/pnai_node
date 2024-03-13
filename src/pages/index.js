@@ -11,10 +11,10 @@ const IndexPage = ({ location }) => (
   <Layout location={location}>
     <StyledMainContainer className="fillHeight">
       <Hero />
-      <About />
       <Tech />
       <Featured />
       <Projects />
+      <About />
       <Subscribe />
     </StyledMainContainer>
   </Layout>

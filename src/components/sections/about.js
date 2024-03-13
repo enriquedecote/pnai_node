@@ -145,9 +145,8 @@ const About = () => {
     'Mathematical Modelling',
   ];
   const appointments = [
-    'CTO at People & AI',
-    'Building the next AI hit (in stelth)',
-    'Board member at TARA (the Trading Agent Research Association)',
+    'CTO @ People & AI',
+    'VP of AI @ CellClar',
     'Associate Professor of Computer Science @ INAOE',
   ];
 

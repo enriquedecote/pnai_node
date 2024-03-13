@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { email } from '@config';
+import { email, calendarBook } from '@config';
+// import { Link } from 'gatsby';
 import { navDelay, loaderDelay } from '@utils';
 
 const StyledHeroSection = styled.section`
@@ -68,9 +69,13 @@ const Hero = () => {
   //Companies that shift from AI experimentation to execution achieve lasting ROI and competitive agility.
   //If unlocking the AI potential is one of your top OKRs, we can help getting it right. One client at a time.
   const seven = (
-    <a href={`mailto:${email}`} className="email-link">
-      Get In Touch
+    <a href={`${calendarBook}`} className="email-link">
+      Book a free 30 min call
     </a>
+    // <a href={`mailto:${email}`} className="email-link">
+    //   Book a free 30 min call
+    // </a>
+    // <Link to={calendarBook}>Book a 30 min call</Link>
   );
 
   const items = [one, two, three, four, five, six, sixone, seven];
