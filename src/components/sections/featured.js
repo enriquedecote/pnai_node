@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import sr from '@utils/sr';
-import { srConfig } from '@config';
+// import sr from '@utils/sr';
+// import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 
 const StyledProject = styled.div`
@@ -279,10 +279,21 @@ const Featured = () => {
 
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
-  useEffect(() => {
-    sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+  // useEffect(() => {
+  //   sr.reveal(revealTitle.current, srConfig());
+  //   revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+  // }, []);
+
+  // useEffect(() => {
+  //   async function animate() {
+  //     if (revealTitle.current) {
+  //       const sr = (await import("scrollreveal")).default
+  //       sr().reveal(revealTitle.current, srConfig())
+  //       revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+  //     }
+  //   }
+  //   animate()
+  // }, []);
 
   return (
     <section id="projects">

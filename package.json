@@ -29,6 +29,7 @@
     ]
   },
   "dependencies": {
+    "@loadable/component": "^5.16.3",
     "animejs": "^3.2.1",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.13.3",
@@ -41,6 +42,7 @@
     "gatsby-plugin-offline": "^6.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-robots-txt": "^1.5.5",
+    "gatsby-plugin-scroll-reveal-with-new-react": "^0.0.8",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-plugin-styled-components": "^6.13.1",
@@ -58,7 +60,6 @@
     "react-helmet": "^6.1.0",
     "react-native-webp-format": "^1.1.2",
     "react-transition-group": "^4.4.1",
-    "scrollreveal": "^4.0.9",
     "smooth-scroll": "^16.1.0",
     "styled-components": "^6.1.8"
   },

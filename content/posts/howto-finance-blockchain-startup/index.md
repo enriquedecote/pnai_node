@@ -1,9 +1,9 @@
 ---
 title: How to finance your blockchain startup
 description: A reflection on token-backed vs. traditional VC financing
-date: '2022-10-12'
+date: 2022-10-12
 draft: false
-slug: '/insights/howto-finance-blockchain-startup'
+slug: /insights/howto-finance-blockchain-startup
 tags:
   - fundraising
   - venture capital

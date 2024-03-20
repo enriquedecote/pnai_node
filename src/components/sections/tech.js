@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
-import { srConfig } from '@config';
+// import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
-import sr from '@utils/sr';
+// import sr from '@utils/sr';
 
 const StyledTechSection = styled.section`
   max-width: 700px;
@@ -183,7 +183,17 @@ const Tech = () => {
   const tabs = useRef([]);
 
   const revealContainer = useRef(null);
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
+  // useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
+
+  // useEffect(() => {
+  //   async function animate() {
+  //     if (revealContainer.current) {
+  //       const sr = (await import("scrollreveal")).default
+  //       sr.reveal(revealContainer.current, srConfig(), []);
+  //     }
+  //   }
+  //   animate()
+  // }, []);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {

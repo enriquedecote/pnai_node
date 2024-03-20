@@ -3,8 +3,8 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { srConfig } from '@config';
-import sr from '@utils/sr';
+// import { srConfig } from '@config';
+// import sr from '@utils/sr';
 import { Layout } from '@components';
 import { Icon } from '@components/icons';
 
@@ -134,11 +134,23 @@ const ArchivePage = ({ location, data }) => {
   const revealTable = useRef(null);
   const revealProjects = useRef([]);
 
-  useEffect(() => {
-    sr.reveal(revealTitle.current, srConfig());
-    sr.reveal(revealTable.current, srConfig(200, 0));
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
-  }, []);
+  // useEffect(() => {
+  //   sr.reveal(revealTitle.current, srConfig());
+  //   sr.reveal(revealTable.current, srConfig(200, 0));
+  //   revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
+  // }, []);
+
+  // useEffect(() => {
+  //   async function animate() {
+  //     if (revealContainer.current) {
+  //       const sr = (await import("scrollreveal")).default
+  //       sr.reveal(revealTitle.current, srConfig());
+  //       sr.reveal(revealTable.current, srConfig(200, 0));
+  //       revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
+  //     }
+  //   }
+  //   animate()
+  // }, []);
 
   return (
     <Layout location={location}>

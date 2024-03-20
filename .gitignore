@@ -11,3 +11,4 @@ package-lock.json
 .vscode/
 public.zip
 public.tgz
+package-lock.json.old

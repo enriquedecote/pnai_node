@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
-import { srConfig } from '@config';
-import sr from '@utils/sr';
+// import { srConfig } from '@config';
+// import sr from '@utils/sr';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -128,9 +128,20 @@ const About = () => {
 
   const revealContainer = useRef(null);
 
-  useEffect(() => {
-    sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  // useEffect(() => {
+  //   sr.reveal(revealContainer.current, srConfig());
+  // }, []);
+
+  // useEffect(() => {
+  //   async function animate() {
+  //     if (revealContainer.current) {
+  //       const sr = (await import("scrollreveal")).default
+  //       sr().reveal(revealContainer.current, srConfig())
+  //     }
+  //   }
+  //   animate()
+  // }, []);
+
 
   const skills = [
     'Artificial Intelligence',

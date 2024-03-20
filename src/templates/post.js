@@ -77,13 +77,23 @@ const PostTemplate = ({ data, location }) => {
 export default PostTemplate;
 
 PostTemplate.propTypes = {
-  data: PropTypes.object,
+  // data: PropTypes.object,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      html: PropTypes.object,
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        slug: PropTypes.string,
+      }),
+    }),
+  }),
   location: PropTypes.object,
 };
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
+ {
+    markdownRemark(
+      fileAbsolutePath: { regex: "/posts/" }) {
       html
       frontmatter {
         title
