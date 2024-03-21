@@ -298,7 +298,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Featured Past Projects
+        Featured Projects
       </h2>
 
       <div>

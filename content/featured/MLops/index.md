@@ -10,5 +10,4 @@ keytech:
   - open-source frameworks
 showInProjects: true
 ---
-
-Help transition data science experimentation into a production environment. We are helping our clients create and manage the production ML (or deep learning) lifecycle. We are applying the entire lifecycle - from integrating with model generation (software development lifecycle, continuous integration/continuous delivery), orchestration, and deployment, to health, diagnostics, governance, and business metrics.
+Bit.bio is a synthetic biology company providing human cells for research, drug discovery and cell therapy. We designed and implemented a data experimentation framework into a production environment. This framework is helping bit.bio create and manage their production ML (or deep learning) lifecycle, which includes integrating with model generation (software development lifecycle, continuous integration/continuous delivery), orchestration, and deployment, to health, diagnostics, governance, and business metrics.

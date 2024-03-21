@@ -89,6 +89,28 @@ const mixins = {
 
   button,
 
+  xsmallButton: css`
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 0.15rem 0.5rem;
+  font-size: var(--fz-xxs);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--green-tint);
+  }
+  &:after {
+    display: none !important;
+  }
+`,
+
   smallButton: css`
     color: var(--green);
     background-color: transparent;

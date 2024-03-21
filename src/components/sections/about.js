@@ -21,9 +21,9 @@ const StyledAboutSection = styled.section`
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(1, minmax(140px, 400px));
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 0 0 10px 0;
     overflow: hidden;
     list-style: none;
 
@@ -156,8 +156,8 @@ const About = () => {
     'Mathematical Modelling',
   ];
   const appointments = [
-    'CTO @ People & AI',
-    'VP of AI @ CellClar',
+    'Chief Scientist @ People & AI',
+    'Vice President of AI @ CellClar',
     'Associate Professor of Computer Science @ INAOE',
   ];
 
@@ -192,11 +192,11 @@ const About = () => {
             </p>
 
             <p><b>Specialties:</b></p>
+            <ul className="skills-list">
+              {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            </ul> 
           </div>
 
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
         </StyledText>
 
         <StyledPic>

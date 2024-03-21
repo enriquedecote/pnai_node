@@ -135,6 +135,10 @@ const StyledTabContent = styled.div`
     ${({ theme }) => theme.mixins.fancyList};
   }
 
+  a.xxsButton {
+    ${({ theme }) => theme.mixins.xsmallButton};
+  }
+
   h3 {
     margin-bottom: 5px;
     font-size: var(--fz-xxl);
@@ -157,13 +161,14 @@ const Tech = () => {
   const data = useStaticQuery(graphql`
     query {
       tech: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/tech/" } }
+        filter: { fileAbsolutePath: { regex: "/tech/" }, frontmatter: { publish: { eq: true } } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
           node {
             frontmatter {
               title
+              publish
               tech
               location
               range

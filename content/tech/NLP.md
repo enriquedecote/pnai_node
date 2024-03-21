@@ -1,8 +1,9 @@
 ---
-date: '3'
+date: '9'
 title: 'Natural Language Processing'
 tech: 'NLP'
 <>location: ''
+publish: true
 range: ''
 <>url: 'https://www.upstatement.com/'
 ---

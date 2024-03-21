@@ -11,6 +11,10 @@ const StyledFooter = styled.footer`
   min-height: 70px;
   padding: 15px;
   text-align: center;
+
+    // display: grid;
+    // grid-template-columns: 3fr 2fr;
+    // grid-gap: 50px;
 `;
 
 const StyledSocialLinks = styled.div`
@@ -40,10 +44,37 @@ const StyledSocialLinks = styled.div`
   }
 `;
 
-const StyledCredit = styled.div`
+const StyledCopyright = styled.div`
   color: var(--light-slate);
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
+  line-height: 1;
+
+  a {
+    padding: 10px;
+  }
+
+  .address {
+    margin-top: 10px;
+
+    & > span {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 7px;
+    }
+    svg {
+      display: inline-block;
+      margin-right: 5px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+`;
+
+const StyledCredit = styled.div`
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxxs);
   line-height: 1;
 
   a {
@@ -103,6 +134,12 @@ const Footer = () => {
             ))}
         </ul>
       </StyledSocialLinks>
+
+      <StyledCopyright tabIndex={0}>
+        <div className='address'>
+        People & AI &copy; 2024 | Cambridge, UK
+        </div>
+      </StyledCopyright>
 
       <StyledCredit tabindex="-1">
         <a href="https://github.com/bchiang7/v4">
